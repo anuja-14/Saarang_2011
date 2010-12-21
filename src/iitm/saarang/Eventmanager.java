@@ -4,7 +4,12 @@ public class Eventmanager {
 	
 public int noofevents;
 public Eventnode[] allevents;
-public void createdata()
+private static Eventmanager eventManager;
+private Eventmanager()
+{
+	createData();
+}
+public void createData()
 {   
 	Eventnode[] aevents={ 
     new Eventnode(0,"Dreams on Canvas","Spotlight","Is art your passion?\n\nDoes the world seem extra colorful?\n\nThen welcome to \"Dreams on Canvas\", a platform to showcase your artistic talent. Dreams on Canvas brings together the best student artists from the country to compete and exhibit their proficiency in shades and colors.\n\nThis is an art exhibition at Saarang where we expect you not to just exhibit yourpaintings but to bring out other artistic abilities in you.For this purpose, the exhibition over the four days will be coupled with various lectures and workshops by the who's-who of the art world."),
@@ -285,6 +290,16 @@ public void createdata()
 allevents=aevents;	
 noofevents=58;
 }    
+public static Eventmanager getInstance()
+{
+	if (eventManager==null)
+	{
+		eventManager= new Eventmanager();
+		return eventManager;
+	}
+	else
+		return eventManager;
+}
 public String finddesbysub(String a)
 {
 	for(int i=0;i<allevents.length;i++)

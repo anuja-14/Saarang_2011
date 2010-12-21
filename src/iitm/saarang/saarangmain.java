@@ -79,10 +79,10 @@ public class saarangmain extends ListActivity {
 	Cursor c= mDbHelper.fetchAllEvents("1");
 	if (c.getCount()<5)
 	{
-		mDbHelper.createEvent("pottery", "sac", 1, "11","0");
+		/*mDbHelper.createEvent("pottery", "sac", 1, "11","0");
 		mDbHelper.createEvent("dance", "sacs", 2, "11","1");
 		mDbHelper.createEvent("artwork", "sac1", 3, "11","2");
-		mDbHelper.createEvent("Quiz", "icsr", 4, "11","3");
+		mDbHelper.createEvent("Quiz", "icsr", 4, "11","3");*/
 	}
 		 
 		 
