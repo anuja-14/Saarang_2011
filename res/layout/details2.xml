@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#000000"
+  android:orientation="vertical"
+  
+ >
+  <Button android:id="@+id/text8" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="35sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:textColor="#FFFFFF"
+    
+    />
+      <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="15sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:textColor="#FFFFFF"
+    android:text="  "
+    />
+     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:textColor="#FFFFFF"
+    android:text="Nick : "
+    />
+    <TextView android:id="@+id/text9" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#FFFFFF"
+    android:textColor="#000000"
+    
+    
+    />
+    
+    <TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:text="Department : "
+    />
+    
+    <TextView android:id="@+id/text10" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:textColor="#000000"
+    
+    />
+    
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFFFF"
+    android:scrollbars="vertical"
+    android:text="Phone no. : "
+    />
+     <TextView android:id="@+id/text11" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:textColor="#000000"
+    android:scrollbars="vertical"
+        />
+</LinearLayout>

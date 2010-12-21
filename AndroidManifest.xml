@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="iitm.saarang"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".saarangmain"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    
+
+<activity android:name=".Events"></activity>
+<activity android:name=".Eventsub"></activity>
+<activity android:name=".Eventbody"></activity>
+<activity android:name=".Proshows"></activity>
+<activity android:name=".People"><intent-filter></intent-filter>
+</activity>
+<activity android:name=".Peoplesub"></activity>
+<activity android:name=".Coordsub"></activity>
+<activity android:name=".pplinfo"></activity>
+<activity android:name=".pplname"></activity>
+<activity android:name=".SMS"></activity>
+<activity android:name=".Bookmarks"></activity>
+<activity android:name=".booksub"></activity>
+<activity android:name=".Schedule"></activity>
+<activity android:name=".DaySub"><intent-filter></intent-filter></activity>
+<activity android:name=".Eventsub_day"></activity>
+</application>
+
+<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+<uses-permission android:name="android.permission.SEND_SMS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS">
+    </uses-permission>
+</manifest> 
