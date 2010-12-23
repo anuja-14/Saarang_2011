@@ -15,8 +15,8 @@ import android.widget.ListView;
 public class saarangmain extends ListActivity {
 	
 	private SaarangDbAdapter mDbHelper;
-	public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+	public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
         ImageView image = (ImageView) findViewById(R.id.test_image);
