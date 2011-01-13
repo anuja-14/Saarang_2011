@@ -32,40 +32,40 @@ public class Coordsub extends ListActivity
         p.createdata();
         if(title.equals("Design"))
         {
-        	String[] items={"Ambience","Design","IP","IP(Events)","Photography & Videography"};
+        	String[] items={"Ambience","GraphicDesign","DesignFest","CreativeTeam","Photography","Videography"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items; 
         }
         if(title.equals("Events"))
         {
-        	String[] items={"Antakshari","Biz Quiz","Cartoonist","Choreo Nite & Free Style Dancing","Classical Dance","Classical Music","Cluedo","Creative Writing & The Fourth Estate"
-        			        ,"Crossie","Daily Events","Daily & Online Quiz","Essence","Fine Arts","Geo-Genius","India Quiz","Informals","Lectures & Demos","Light Music","Lonewolf","Online Debate",
-        			        "Online media","Paintball","Photography contest","Potpourri","Saarang Village","Scrabble","Short Film Making","Speaking Events"
-        			        ,"SpEnt Quiz","Thespian Events","Treasure Hunt","Western Music","Whose Line","Workshops","WTGW"};
+        	String[] items={"FineArts","Choreo","ClassicalDance","Lectures and Demonstrations","Creative Writing","Crossie","Scrabble","WTGW",
+        			       "PhotographyWorkshops","SFM","MUN","Classical Music","Light Music","Western Music","Kryptyx","BizQuiz"
+        			        ,"India Quiz","SpEnt Quiz","Main Quiz","Speaking Events","Dramatics","Daily Events","QOS","Treasure Hunt"
+        			        ,"Adventure Zone","Daily Quiz","Antakshari","Cluedo","Potpourrie","SaarangVillage","Workshops","Informals","CultureShow","Mr. & Ms.Saarang"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items;  
         }
         if(title.equals("Facilities"))
         {
-        	String[] items={"Equipment","Facilities & Requirements","Production"};
+        	String[] items={"Equipment","Facilities","Production"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items; 
         }
         if(title.equals("Finance"))
         {
-        	String[] items={"Catering","Finance","PPM","Sales & Distribution","Transport"};
+        	String[] items={"Catering","Finance","PPM","Transportation","SalesandDistribution"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items; 
         }
         if(title.equals("Publicity & Sales"))
         {
-        	String[] items={"EP","Ticket Sales"};
+        	String[] items={"InternalPublicity","ExternalPublicity","Ticket Sales"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items; 
         } 
         if(title.equals("Spons & PR"))
         {
-        	String[] items={"Newsletter","Spons pub & Marketing","Spons & PR"};
+        	String[] items={"CreativeNewsletter","Spons Pub","Spons,PR and Media","OnlineMedia","Sponssupport"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items; 
         }
@@ -75,6 +75,12 @@ public class Coordsub extends ListActivity
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items; 
         }
+        if(title.equals("Hospitality"))
+        		{
+        	String[] items={"Coordinators","Deputy coordinators"};
+            setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
+           types=items; 
+        		}
         Button t=(Button)findViewById(R.id.text2);
         t.setText(title);
         
@@ -86,7 +92,14 @@ public class Coordsub extends ListActivity
          	 super.onListItemClick(l, v, position, id);
     		    Intent i = new Intent(this,pplname.class);
     		    Bundle b = new Bundle(); 
-    		    b.putString("value",types[position]);
+    		    if(title.equals("Hospitality"))
+    		    {   if(position==0)
+    		    	b.putString("value","HospitalityCoord");
+    		    else if(position==1)
+    		    	b.putString("value","HospitalityDeputyCoord");
+    		    }
+    		    else
+    		    	b.putString("value",types[position]);
     		    b.putString("value2", "Coordinators");
     		    i.putExtras(b);
     		    startActivity(i);

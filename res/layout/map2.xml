@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        
+         android:id="@+id/im"
+         android:src="@drawable/iitmmap"  
+         android:layout_width="698px"
+    android:layout_height="645px"
+    android:layout_x="0px"
+        android:layout_y="-62px"    />
+         <ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue1"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+ <ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue2"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+ <ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue3"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+ <ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue4"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+ <ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue5"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+ <ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue6"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/> 
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue7"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/> 
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue8"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue9"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>  
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue10"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>   
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue11"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue12"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/> 
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue13"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>
+<ImageView
+android:src="@drawable/venuemarker"
+android:id="@+id/venue14"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_x="0px"
+android:layout_y="0px"
+/>    
+</AbsoluteLayout>
+

@@ -1,4 +1,5 @@
-package iitm.saarang;import android.content.Context;
+package iitm.saarang;import android.R.color;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -18,7 +19,7 @@ public class IconifiedTextView extends LinearLayout {
 		/* First Icon and the Text to the right (horizontal),
 		 * not above and below (vertical) */
 		this.setOrientation(HORIZONTAL);
-		this.setBackgroundColor(0xFFFFFFFF);
+		this.setBackgroundColor(color.transparent);
  
 		mIcon = new ImageView(context);
 		mIcon.setImageDrawable(aIconifiedText.getIcon());
@@ -38,10 +39,11 @@ public class IconifiedTextView extends LinearLayout {
 		mText.setTypeface(Typeface.SANS_SERIF);
 		mText.setGravity(Gravity.BOTTOM);
 		mText.setText(aIconifiedText.getText());
+		
 	   
 		/* Now the text (after the icon) */
 		addView(mText, new LinearLayout.LayoutParams(
-				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+				LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 	}
 
 	public void setText(String words) {

@@ -12,7 +12,7 @@ public class pplname extends ListActivity
 {  
 	
     public int k;
-    public String[] subppl={"","","","","","","","","","","","","","","","","","","",""};
+    public String[] subppl={"","","","","","","","","","","","","","","","","","","","","",""};
     public pplmanager e;
 
     @Override
@@ -28,6 +28,7 @@ public class pplname extends ListActivity
             title = extras.getString("value");
             title2=extras.getString("value2");
         }
+      
         
       int i;
       k=0;
@@ -37,6 +38,7 @@ public class pplname extends ListActivity
       int c2=e.noofcores;
       if(title2.equals("Coordinators"))
       { 
+    	  
     	  for(i=0;i<c1;i++)
            if((e.allppl[i].department).equals(title))
     	  {
@@ -84,7 +86,10 @@ public class pplname extends ListActivity
       
       setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,subppl)); 
       Button t=(Button)findViewById(R.id.text2);
-      t.setText(title); 
+      if(title.equals("HospitalityCoord") || title.equals("HospitalityDeputyCoord"))
+    	  t.setText("Hospitality");
+      else
+    	  t.setText(title); 
 	 }
     
     @Override

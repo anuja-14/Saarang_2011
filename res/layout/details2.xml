@@ -3,9 +3,9 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:background="#000000"
-  android:orientation="vertical"
   
+  android:orientation="vertical"
+  android:background="@drawable/ttry"
  >
   <Button android:id="@+id/text8" xmlns:android="http://schemas.android.com/apk/res/android"
     android:textSize="35sp"
@@ -13,7 +13,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     
-    android:textColor="#FFFFFF"
+     android:textColor="#4E387E"
     
     />
       <TextView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -31,7 +31,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     
-    android:textColor="#FFFFFF"
+    android:textColor="#4E387E"
     android:text="Nick : "
     />
     <TextView android:id="@+id/text9" xmlns:android="http://schemas.android.com/apk/res/android"
@@ -50,7 +50,7 @@
     android:typeface="serif"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    
+     android:textColor="#4E387E"
     android:text="Department : "
     />
     
@@ -69,7 +69,7 @@
     android:typeface="serif"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:textColor="#FFFFFF"
+     android:textColor="#4E387E"
     android:scrollbars="vertical"
     android:text="Phone no. : "
     />

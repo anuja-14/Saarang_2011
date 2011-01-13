@@ -2,32 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="fill_parent"
     	android:layout_height="fill_parent"
-    	android:background="#000000"
+    	
     	android:orientation="vertical"
-    	>
+    	android:background="@drawable/ttry">
     <Button android:id="@+id/text2" xmlns:android="http://schemas.android.com/apk/res/android"
-    android:textSize="35sp"
-    android:typeface="serif"
+  android:textSize="37sp"
+    
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:gravity="center" 
-    android:textColor="#FFFFFF"
+    android:textColor="#4E387E"
     
     android:text="EVENTS"/>
     <TextView android:id="@+id/text3" xmlns:android="http://schemas.android.com/apk/res/android"
     android:textSize="25sp"
     android:typeface="serif"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="wrap_content" 
     android:gravity="center" 
     android:textColor="#800000"
-    
+   
     android:text="                      "/>
     <ListView android:id="@+id/android:list"
             android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
         	android:scrollbars="vertical"
-      	    
+      	   android:dividerHeight="3sp"
+      	   
       	/>
   	
 </LinearLayout>

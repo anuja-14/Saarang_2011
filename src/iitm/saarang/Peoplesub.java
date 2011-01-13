@@ -28,16 +28,17 @@ public class Peoplesub extends ListActivity
         p.createdata();
         if(title.equals("Cores"))
         {
-        	String[] items={"Cul Secs","Design","Events","Facilities","Finance","Hospitality","Professional Shows","Publicity & Sales","QMS","Security","Spons,PR & Media","Web operations"};
+        	String[] items={"Design","Events","Facilities","Finance","Hospitality","Web Operations","Publicity Sales and Marketing","QMS","Security","Spons PR & Media"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items; 
         }
         if(title.equals("Coordinators"))
         {
-        	String[] items={"Design","Events","Facilities","Finance","Hospitality","Professional Shows","Publicity & Sales","QMS","Security","Spons & PR","Web operations"};
+        	String[] items={"Design","Events","Facilities","Finance","Hospitality","ProShows","Publicity & Sales","QMS","Security","Spons & PR","Web operations"};
           setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem,items)); 
          types=items;  
         }
+       
         Button t=(Button)findViewById(R.id.text2);
         t.setText(title);
         
@@ -50,7 +51,7 @@ public class Peoplesub extends ListActivity
          	 super.onListItemClick(l, v, position, id);
     		 if(title.equals("Coordinators"))
     		 {
-    			 if((position==0)|(position==1)|(position==2)|(position==3)|(position==6)|(position==9)|(position==10))
+    			 if((position==0)|(position==1)|(position==2)|(position==3)|(position==6)|(position==9)|(position==10)|(position==4))
     		       {Intent i = new Intent(this,Coordsub.class);
     			  Bundle b = new Bundle(); 
     		    b.putString("value",types[position]);
@@ -60,6 +61,7 @@ public class Peoplesub extends ListActivity
     			 else
     			 {Intent i = new Intent(this,pplname.class);
    			      Bundle b = new Bundle(); 
+   			      
    		          b.putString("value",types[position]);
    		          b.putString("value2","Coordinators");
    		          i.putExtras(b);

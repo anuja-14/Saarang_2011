@@ -29,7 +29,7 @@ setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem, items));
 protected void onListItemClick(ListView l, View v, int position, long id) {
     super.onListItemClick(l, v, position, id);
     e=new Eventmanager();
-    e.createdata();
+    //e.createdata();
     if(position==0)
     {	
     Intent i = new Intent(this,Eventbody.class);

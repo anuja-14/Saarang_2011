@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@drawable/ttry"
+    	android:orientation="vertical"
+    	android:scrollbars="vertical">
+  
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:textColor="#4E387E"
+    android:text="Choose font size:"
+    />
+    
+    <ListView android:id="@+id/list3"
+          android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	
+        	/>
+        	 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18sp"
+    android:typeface="serif"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:textColor="#4E387E"
+    android:text="Choose font style : "
+    />
+    <ListView android:id="@+id/list4"
+          android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"/>
+        	
+    <Button  android:id="@+id/button3" xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:typeface="serif"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" 
+    android:textColor="#000000"
+    
+    android:text="Set"
+    android:layout_gravity="center_horizontal"/>
+   
+</LinearLayout>

@@ -7,6 +7,7 @@ public class pplnode {
 	 public String nick;
 	 public String department;
 	 public String phno;
+	 public long bookid=-1;
 	 pplnode(int id, String name,String nick,String no,String department)
 	 {
 		this.id=id;

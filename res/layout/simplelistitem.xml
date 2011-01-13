@@ -4,7 +4,7 @@
     android:typeface="serif"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF"
+    android:background="@android:color/transparent"
     android:textColor="#000000"
     android:shadowColor="#555555"
     android:shadowDx="5.0"

@@ -10,6 +10,7 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <uses-permission android:name="android.permission.INTERNET" />
         </activity>
 
     
@@ -30,8 +31,20 @@
 <activity android:name=".Schedule"></activity>
 <activity android:name=".DaySub"><intent-filter></intent-filter></activity>
 <activity android:name=".Eventsub_day"></activity>
+<activity android:name=".News"></activity>
+<activity android:name=".book_schedule"></activity>
+<activity android:name=".Checkbox"></activity>
+<activity android:name=".Searchresults"></activity>
+<activity android:name=".search_schedule"></activity>
+<activity android:name=".listdisplay"></activity>
+<activity android:name=".map"></activity>
+<activity android:name=".venue"></activity>
+<activity android:name=".News_sub"></activity>
+<activity android:name=".musicsub"></activity>
+<activity android:name=".settings"></activity>
+<activity android:name=".map_schedule"></activity>
 </application>
-
+ <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 <uses-permission android:name="android.permission.SEND_SMS">
     </uses-permission>

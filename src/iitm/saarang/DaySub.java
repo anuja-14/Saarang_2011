@@ -55,10 +55,10 @@ public class DaySub extends ListActivity {
     }*/
     public void createEvent ()
     {
-    /*	mDbHelper.createEvent("dance","sac", 1, "10");
-    	mDbHelper.createEvent("artworkshop", "icsr",2, "11");
-    	mDbHelper.createEvent("artworkshop2", "icsr",3, "11");
-    	mDbHelper.createEvent("artworkshop3", "icsr",4, "11");y.e
+    	//mDbHelper.createEvent("dance","sac", 1, "10");
+    	//mDbHelper.createEvent("artworkshop", "icsr",2, "11");
+    	//mDbHelper.createEvent("artworkshop2", "icsr",3, "11");
+    	//mDbHelper.createEvent("artworkshop3", "icsr",4, "11");
     	
    //	mDbHelper.deleteNote(1);
     //	String from []=new String[]{"anauj"};8
@@ -74,7 +74,11 @@ public class DaySub extends ListActivity {
     	String day_val=extras.getString("value");
     	 Button t=(Button)findViewById(R.id.text2);
          t.setText(day_val);
-    	if(day_val.equals("Day1"))
+    	if(day_val.equals("Day0"))
+    	{
+    		day="0";
+    	}
+    	else if(day_val.equals("Day1"))
     	{
     		day="1";
     	}

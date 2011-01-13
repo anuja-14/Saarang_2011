@@ -29,11 +29,22 @@ setListAdapter(new ArrayAdapter(this, R.layout.simplelistitem, items));
 @Override
 protected void onListItemClick(ListView l, View v, int position, long id) {
     super.onListItemClick(l, v, position, id);
-    Intent i = new Intent(this,booksub.class);
-    Bundle b = new Bundle(); 
-    b.putString("value",items[position]);
-    i.putExtras(b);
-    startActivity(i);
+   
+    
+    if(items[position].equals("Schedule"))
+    {
+    	 Intent i = new Intent(this,book_schedule.class);
+    	 startActivity(i);
+    	 
+    }
+    else
+    {
+    	 Intent i = new Intent(this,booksub.class);
+    	    Bundle b = new Bundle(); 
+    	    b.putString("value",items[position]);
+    	    i.putExtras(b);
+    	    startActivity(i);
+    }
 }
 
 
